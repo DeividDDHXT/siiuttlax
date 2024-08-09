@@ -1,9 +1,15 @@
-from django.forms import Form,ModelForm
-from .models import Professor,Student
-from django import forms
 
+from django.forms import Form, ModelForms
 
-class ProfesorForm(forms.ModelForm):
+from .models import Professor, Student
+
+class ProfessorForm(ModelForm):
+    model = Professor
+    fields = '__all__'
+
+class StudentForm(ModelForm):
+    model = Student 
+    field = '__all__'
 
     class Meta:
         model = Professor
