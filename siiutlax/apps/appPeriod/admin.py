@@ -11,14 +11,5 @@ class SemesterAdmin(admin.ModelAdmin):
     list_display=['semester_name']
 
 
-# Register your models here.
 
-@admin.register(Period)
-class PeriodAdmin(admin.ModelAdmin):
-    list_display=['year', 'period', 'cicle','is_active']
-    list_editable=['is_active']
-    
-@admin.register(Semester)
-class SemesterAdmin(admin.ModelAdmin):
-    list_display=['semester_name']
 

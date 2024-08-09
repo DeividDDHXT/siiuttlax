@@ -9,7 +9,7 @@ Description: Configuracion del Proyecto SIIUTTlax
 """
 import os
 from pathlib import Path
-from dotenv import load_dotenv
+
 from django.conf.global_settings import LOGIN_REDIRECT_URL
 
 from dotenv import load_dotenv

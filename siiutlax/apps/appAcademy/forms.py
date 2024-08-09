@@ -14,11 +14,14 @@ class ProfesorForm(forms.ModelForm):
             'category': forms.Select()
         }
     
+   
+   
+
     
 class StudentForm(forms.ModelForm):
     class Meta:
         model = Student
-        fields = ['username', 'password', 'first_name','matricula']
+        fields = ['username', 'password', 'first_name' ,'matricula']
         widgets = {
             'password': forms.PasswordInput()
         }
